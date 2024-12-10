@@ -1,5 +1,5 @@
-import Display from "./pages/display"
-import Products from "./pages/products"
+import Display from "./pages/Display.jsx"
+import Products from "./pages/Products.jsx"
 
 
 function App() {
