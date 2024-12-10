@@ -24,9 +24,12 @@ const Display = () => {
  
   return (
     <>
+    <div className='display-container'>
     {products.map(product => (
       <Product key={product._id}{...product} />
     ))}
+    </div>
+    
    </>
   )
 }
