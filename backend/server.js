@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express()
-
+const PORT = process.env.PORT
 
 app.use(express.json())
 const __dirname = path.resolve();
@@ -59,6 +59,6 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 
-app.listen(4000, () => {
-  console.log("Server staretd at 4000")
+app.listen(PORT, () => {
+  console.log("Server started at :" + PORT);
 })
