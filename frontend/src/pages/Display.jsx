@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Products.css';
-import Product from './product';
+import Product from './Product.jsx';
 
 
 const Display = () => {
