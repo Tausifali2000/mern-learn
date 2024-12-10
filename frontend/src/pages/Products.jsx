@@ -9,7 +9,7 @@ const Products = () => {
   async function createProduct(ev) {
     ev.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/api/products', {
+      const response = await fetch('https://mern-learn-l2sn.onrender.com/api/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 import express from 'express';
 import products from './model/products.js';
 import mongoose from 'mongoose'
- 
+ import cors from 'cors';
 import path from 'path';
 import dotenv from 'dotenv';
 
@@ -12,6 +12,14 @@ const PORT = process.env.PORT
 
 app.use(express.json())
 const __dirname = path.resolve();
+app.use(cors({
+  origin: ['https://mern-learn-l2sn.onrender.com'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+}));
+
+
+
 
 mongoose.connect(process.env.MONGO_URI);
 

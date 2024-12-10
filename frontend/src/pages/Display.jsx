@@ -10,7 +10,7 @@ const Display = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/products');
+        const response = await fetch('https://mern-learn-l2sn.onrender.com/api/products');
         const products = await response.json();
         setProducts(products);
       } catch (error) {
